@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modificar cliente</title>
+</head>
+<body>
+    <h1>Modificar cliente</h1>
+
+    <form id="modifyClientForm" >
+        <label for="dni">DNI del cliente a Modificar:</label><br>
+        <input type="number" id="dni" name="dni"><br>
+        <input type="submit" value="Modificar Cliente">
+    </form>
+    <div id="clientInfo" style="display: none;">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" disabled><br>
+        <label for="surname">Apellido:</label><br>
+        <input type="text" id="surname" name="surname" disabled><br>
+        <label for="hasCard">¿Tiene tarjeta?</label><br>
+        <input type="checkbox" id="hasCard" name="hasCard" disabled><br>
+        <button id="editButton" disabled>Editar</button>
+        <button id="saveButton" disabled>Guardar</button>
+        <!-- Agrega más campos según sea necesario -->
+    </div>
+    <script src="/js/clients/updateclient.js"></script>
+</body>
+</html>

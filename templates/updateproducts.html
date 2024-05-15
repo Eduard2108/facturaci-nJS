@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modificar Productos</title>
+</head>
+<body>
+    <form id="modifyProductForm">
+        <input type="number" id="productID" placeholder="Introduce ID del producto" required>
+        <button type="submit">Buscar producto</button>
+    </form>
+    <div id="productDetails" style="display: none;">
+        <label for="productName">Nombre del Producto:</label>
+        <input type="text" id="productName" step="0.01" disabled><br>
+
+        <label for="productPrice">Precio del Producto:</label>
+        <input type="number" id="productPrice" disabled><br>
+
+        <label for="productStock">Stock del Producto:</label>
+        <input type="number" id="productStock" disabled><br>
+
+        <button id="editProductButton" disabled>Editar</button>
+        <button id="saveProductButton" disabled>Guardar</button>
+    </div>
+
+    <script src="/js/products/updateproducts.js"></script>
+</body>
+</html>

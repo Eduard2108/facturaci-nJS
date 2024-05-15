@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Cliente</title>
+</head>
+<body>
+    <form id="clientForm">
+        <label for="type">Tipo de Cliente:</label><br>
+        <select id="type" name="type">
+            <option value="regular">Cliente Regular</option>
+            <option value="vip">Cliente VIP</option>
+        </select><br>
+        <label for="name">
+            Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">Apellido:</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="dni">DNI:</label><br>
+        <input type="number" id="dni" name="dni"><br>
+        <div id="cardField">
+            <label for="hasCard">¿Tiene tarjeta?</label><br>
+            <input type="checkbox" id="hasCard" name="hasCard"><br>
+        </div>
+        <input type="submit" value="Crear Cliente">
+    </form>
+
+    <script type="module" src="/js/clients/createclient.js"></script>
+</body>
+</html>
